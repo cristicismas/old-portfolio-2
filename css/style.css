@@ -56,9 +56,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); }
   .intro__image {
-    border-radius: 3px; }
+    border-radius: 3px;
+    height: 50%; }
   .intro__text {
     display: flex;
     flex-direction: column;
-    margin: 3rem 6rem;
+    margin: 1rem 6rem 3rem 6rem;
     letter-spacing: 1px; }
