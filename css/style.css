@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: #fff; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #333; }
+
+::selection {
+  background-color: #2d5068;
+  color: #fff; }
+
+.navigation {
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  font-family: 'Roboto Slab', serif;
+  width: 100%;
+  margin: 0;
+  padding: 3rem 12rem; }
+  .navigation__item {
+    border-bottom: 2px solid transparent;
+    transition: border .2s;
+    cursor: pointer; }
+    .navigation__item:hover {
+      border-bottom: 2px solid #fff; }
