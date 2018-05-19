@@ -17,6 +17,21 @@ body {
   background-color: #2d5068;
   color: #fff; }
 
+body {
+  font-family: 'Lora', serif; }
+
+.heading--small {
+  font-size: 4rem; }
+
+.paragraph {
+  font-size: 2rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.hero {
+  height: 100vh; }
+
 .navigation {
   background-color: #222;
   display: flex;
@@ -32,3 +47,18 @@ body {
     cursor: pointer; }
     .navigation__item:hover {
       border-bottom: 2px solid #fff; }
+
+.intro {
+  display: flex;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .intro__image {
+    border-radius: 3px; }
+  .intro__text {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 6rem;
+    letter-spacing: 1px; }

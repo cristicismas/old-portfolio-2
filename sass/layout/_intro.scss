@@ -1,0 +1,16 @@
+.intro {
+    display: flex;
+    width: 50%;
+    @include centerElement;
+
+    &__image {
+        border-radius: 3px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 6rem;
+        letter-spacing: 1px;
+    }
+}
