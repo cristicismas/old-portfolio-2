@@ -2,8 +2,6 @@
     background-color: $color-darker;
     display: flex;
     justify-content: space-between;
-    font-size: 2.5rem;
-    font-family: 'Roboto Slab', serif;
     width: 100%;
     margin: 0;
     padding: 3rem 12rem;
@@ -17,6 +15,8 @@
 
         &:hover {
             border-bottom: 2px solid $color-white;
+            animation-play-state: initial;
+            opacity: .5;
         }
     }
 }

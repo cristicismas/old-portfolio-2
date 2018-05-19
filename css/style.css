@@ -32,7 +32,11 @@ body {
   color: #fff; }
 
 body {
-  font-family: 'Lora', serif; }
+  font-family: 'Roboto Slab', serif; }
+
+.navigation {
+  font-size: 2.5rem;
+  font-family: 'Roboto Slab', serif; }
 
 .heading--small {
   font-size: 4rem; }
@@ -50,8 +54,6 @@ body {
   background-color: #222;
   display: flex;
   justify-content: space-between;
-  font-size: 2.5rem;
-  font-family: 'Roboto Slab', serif;
   width: 100%;
   margin: 0;
   padding: 3rem 12rem; }
@@ -62,7 +64,9 @@ body {
     opacity: 0;
     animation: scaleOut .5s ease-out forwards; }
     .navigation__item:hover {
-      border-bottom: 2px solid #fff; }
+      border-bottom: 2px solid #fff;
+      animation-play-state: initial;
+      opacity: .5; }
 
 .intro {
   display: flex;
