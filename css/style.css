@@ -1,3 +1,17 @@
+@keyframes scaleOut {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -44,7 +58,9 @@ body {
   .navigation__item {
     border-bottom: 2px solid transparent;
     transition: border .2s;
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0;
+    animation: scaleOut .5s ease-out forwards; }
     .navigation__item:hover {
       border-bottom: 2px solid #fff; }
 
@@ -54,7 +70,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeIn .3s ease-out .2s forwards; }
   .intro__image {
     border-radius: 3px;
     height: 240px;

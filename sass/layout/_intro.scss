@@ -2,6 +2,8 @@
     display: flex;
     width: 50%;
     @include centerElement;
+    opacity: 0;
+    animation: fadeIn .3s ease-out .2s forwards;
 
     &__image {
         border-radius: 3px;
