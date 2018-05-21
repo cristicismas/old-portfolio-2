@@ -1,0 +1,15 @@
+.skills {
+    width: 75%;
+    margin: auto;
+    padding-top: 20vh;
+
+    &__heading,
+    &__paragraph {
+        width: 70%;
+        margin: auto;
+    }
+
+    &__heading {
+        margin-bottom: 5rem;
+    }
+}
