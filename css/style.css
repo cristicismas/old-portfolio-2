@@ -74,10 +74,11 @@ body {
 .intro {
   display: flex;
   width: 50%;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  top: 40% !important;
   opacity: 0;
   animation: fadeIn .3s ease-out .2s forwards; }
   .intro__image {
@@ -90,15 +91,21 @@ body {
     margin: 1rem 6rem 3rem 6rem;
     letter-spacing: 1px; }
 
-.skills {
+.skills__content {
   width: 75%;
-  margin: auto;
-  padding-top: 20vh; }
-  .skills__heading, .skills__paragraph {
-    width: 70%;
-    margin: auto; }
-  .skills__heading {
-    margin-bottom: 5rem; }
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.skills__heading, .skills__paragraph {
+  width: 70%;
+  margin: auto; }
+
+.skills__heading {
+  margin-bottom: 5rem; }
 
 body > div {
   height: 100vh; }
+  body > div:nth-child(even) {
+    background-color: #222; }

@@ -1,7 +1,8 @@
 .skills {
-    width: 75%;
-    margin: auto;
-    padding-top: 20vh;
+    &__content {
+        width: 75%;
+        @include centerElement;
+    }
 
     &__heading,
     &__paragraph {
