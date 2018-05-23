@@ -19,10 +19,15 @@
 
         & path {
             fill: $color-white;
+            transition: fill .3s;
         }
 
         &:hover {
             transform: translateY(-1rem);
+            
+            & path {
+                fill: $color-main;
+            }
         }
     }
 }
