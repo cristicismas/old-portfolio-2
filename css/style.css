@@ -75,14 +75,15 @@ body {
   .card__overlay {
     height: 100%;
     width: 100%;
+    border-radius: 5px;
     opacity: 0;
     z-index: 100;
     position: absolute;
     top: 0;
     left: 0;
-    transition: all .5s; }
+    transition: all .3s; }
   .card:hover .card__overlay {
-    background-color: rgba(51, 51, 51, 0.9);
+    background-color: rgba(45, 80, 104, 0.9);
     opacity: 1; }
   .card__info {
     margin: 10% .5rem 0; }
@@ -97,15 +98,13 @@ body {
   margin: 0;
   padding: 3rem 12rem; }
   .navigation__item {
-    border-bottom: 2px solid transparent;
-    transition: border .2s;
+    transition: color .2s;
     cursor: pointer;
     opacity: 0;
     animation: scaleOut .5s ease-out forwards;
     text-decoration: none; }
     .navigation__item:hover {
-      border-bottom: 2px solid #f5f5f5;
-      animation-play-state: initial;
+      color: #0099ff;
       opacity: .5; }
 
 .intro {

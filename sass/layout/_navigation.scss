@@ -7,16 +7,14 @@
     padding: 3rem 12rem;
 
     &__item {
-        border-bottom: 2px solid transparent;
-        transition: border .2s;
+        transition: color .2s;
         cursor: pointer;
         opacity: 0;
         animation: scaleOut .5s ease-out forwards;
         text-decoration: none;
 
         &:hover {
-            border-bottom: 2px solid $color-white;
-            animation-play-state: initial;
+            color: $color-main;
             opacity: .5;
         }
     }
