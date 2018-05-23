@@ -1,0 +1,33 @@
+.card {
+    margin: 3rem;
+    position: relative;
+
+    &__image {
+        height: 20rem;
+        border-radius: 5px;
+    }
+
+    &__overlay {
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+    }
+
+    &:hover &__overlay {
+        background-color: rgba($color-dark, .9);
+        opacity: 1;
+    }
+
+    &__info {
+        margin: 10% .5rem 0;
+    }
+
+    &__link {
+        display: block;
+    }
+}

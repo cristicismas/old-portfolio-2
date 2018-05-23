@@ -7,8 +7,11 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/card";
+
 @import "layout/navigation";
 @import "layout/intro";
 @import "layout/skills";
+@import "layout/projects";
 
 @import "pages/home";
