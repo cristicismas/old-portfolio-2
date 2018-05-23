@@ -180,7 +180,7 @@ body {
     .contact__icon:hover {
       transform: translateY(-1rem); }
 
-body > div {
+body > section {
   height: 100vh; }
-  body > div:nth-child(even) {
+  body > section:nth-child(even) {
     background-color: #222; }
