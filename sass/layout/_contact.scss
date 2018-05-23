@@ -1,0 +1,28 @@
+.contact {
+    height: auto;
+
+    &__heading {
+        padding: 5rem 0;
+    }
+
+    &__icons {
+        padding: 7rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon {
+        height: 40px;
+        margin: .7rem;
+        position: relative;
+        transition: all .3s;
+
+        & path {
+            fill: $color-white;
+        }
+
+        &:hover {
+            transform: translateY(-1rem);
+        }
+    }
+}
