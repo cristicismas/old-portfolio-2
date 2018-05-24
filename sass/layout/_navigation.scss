@@ -19,3 +19,14 @@
         }
     }
 }
+
+@media only screen and (max-width: 750px) {
+    .navigation {
+        flex-direction: column;
+        text-align: center;
+
+        &__item {
+            padding: 1rem 0;
+        }
+    }
+}

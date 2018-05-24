@@ -2,7 +2,7 @@
     display: flex;
     width: 50%;
     @include centerElement;
-    top: 40% !important;
+    top: 40%;
     opacity: 0;
     animation: fadeIn .3s ease-out .2s forwards;
 
@@ -17,5 +17,63 @@
         flex-direction: column;
         margin: 1rem 6rem 3rem 6rem;
         letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-height: 680px) and (max-width: 1400) {
+    .intro {
+        width: 100%;
+
+        &__intro {
+            top: 60%;
+        }
+
+        &__image {
+            height: 150px;
+            width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) and (orientation: portrait) {
+    .intro {
+        flex-direction: column;
+        top: 50%;
+
+        &__image {
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        &__text {
+            padding: 5rem 0 10rem;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .intro {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .intro {
+        width: 100%;
+
+        &__image {
+            height: 150px;
+            width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-height: 540px) {
+    .intro {
+        &__image {
+            height: 150px;
+            width: 150px;
+        }
     }
 }

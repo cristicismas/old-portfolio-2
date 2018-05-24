@@ -5,6 +5,8 @@
     &__image {
         height: 20rem;
         border-radius: 5px;
+        margin: auto;
+        display: block;
     }
 
     &__overlay {
@@ -30,5 +32,41 @@
 
     &__link {
         display: block;
+    }
+}
+
+@media only screen and (max-height: 970px) {
+    .card {
+        color: red;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .card {
+        flex-direction: column;
+        margin: 5rem auto;
+
+        &__overlay {
+            opacity: 1;
+            position: initial;
+            width: 70%;
+            margin: auto;
+        }
+
+        &:hover &__overlay {
+            background-color: transparent;
+        }
+
+        &__info {
+            margin: 2rem 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .card {
+        &__image {
+            height: 15rem;
+        }
     }
 }

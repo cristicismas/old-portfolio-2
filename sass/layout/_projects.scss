@@ -21,6 +21,22 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 80%;
-        margin: 20rem auto 0;
+        margin: 10rem auto 0;
+    }
+}
+
+@media only screen and (max-height: 1200px) {
+    .projects {
+        height: auto;
+
+        &__cards {
+            margin: 10rem auto !important;
+        }
+    }
+}
+
+@media only screen and (max-height: 1024px) {
+    .projects__cards {
+        margin-top: 1rem;
     }
 }
