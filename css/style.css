@@ -70,6 +70,21 @@ body {
 .u-underline-text {
   border-bottom: 1px solid #f5f5f5 !important; }
 
+#scrollTop {
+  height: 4rem;
+  margin: 2rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100; }
+  #scrollTop:hover {
+    cursor: pointer; }
+    #scrollTop:hover path {
+      fill: whitesmoke; }
+  #scrollTop path {
+    fill: rgba(245, 245, 245, 0.5);
+    transition: all .2s; }
+
 ::-webkit-scrollbar {
   width: 5px; }
 
