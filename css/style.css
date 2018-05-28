@@ -136,7 +136,8 @@ body {
 @media only screen and (max-width: 1024px) {
   .card {
     flex-direction: column;
-    margin: 5rem auto; }
+    margin: 5rem auto;
+    border: none; }
     .card__overlay {
       opacity: 1;
       position: initial;
