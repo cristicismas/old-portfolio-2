@@ -31,3 +31,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        &__icon:hover {
+            transform: translateY(0);
+
+            & path {
+                fill: $color-white;
+            }
+        }
+    }
+}

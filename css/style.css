@@ -87,6 +87,12 @@ body {
     fill: rgba(245, 245, 245, 0.5);
     transition: all .2s; }
 
+@media only screen and (max-width: 768px) {
+  #scrollTop path {
+    fill: whitesmoke; }
+  #scrollTop:hover {
+    transform: translateY(0); } }
+
 ::-webkit-scrollbar {
   width: 5px; }
 
@@ -174,7 +180,10 @@ body {
     flex-direction: column;
     text-align: center; }
     .navigation__item {
-      padding: 1rem 0; } }
+      padding: 1rem 0; }
+      .navigation__item:hover {
+        color: #f5f5f5;
+        opacity: 1; } }
 
 .intro {
   display: flex;
@@ -307,6 +316,12 @@ body {
       transform: translateY(-1rem); }
       .contact__icon:hover path {
         fill: #0099ff; }
+
+@media only screen and (max-width: 768px) {
+  .contact__icon:hover {
+    transform: translateY(0); }
+    .contact__icon:hover path {
+      fill: #f5f5f5; } }
 
 body > section {
   height: 100vh; }
