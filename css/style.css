@@ -260,7 +260,8 @@ body {
 
 .projects__heading, .projects__paragraph {
   width: 70%;
-  margin: auto; }
+  margin: auto;
+  font-size: 1.3rem; }
 
 .projects__heading {
   position: relative;
@@ -281,6 +282,8 @@ body {
       margin: 10rem auto !important; } }
 
 @media only screen and (max-height: 1024px) {
+  .projects__paragraph {
+    font-size: 1.5rem; }
   .projects__cards {
     margin-top: 1rem; } }
 

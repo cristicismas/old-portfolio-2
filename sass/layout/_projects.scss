@@ -8,6 +8,7 @@
     &__paragraph {
         width: 70%;
         margin: auto;
+        font-size: 1.3rem;
     }
 
     &__heading {
@@ -36,7 +37,13 @@
 }
 
 @media only screen and (max-height: 1024px) {
-    .projects__cards {
-        margin-top: 1rem;
+    .projects {
+        &__paragraph {
+            font-size: 1.5rem;
+        }
+
+        &__cards {
+            margin-top: 1rem;
+        }
     }
 }
