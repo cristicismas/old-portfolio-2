@@ -164,7 +164,10 @@ body {
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  padding: 3rem 12rem; }
+  padding: 3rem 12rem;
+  position: fixed;
+  z-index: 9999;
+  opacity: .9; }
   .navigation__item {
     transition: color .2s;
     cursor: pointer;

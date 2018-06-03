@@ -5,6 +5,9 @@
     width: 100%;
     margin: 0;
     padding: 3rem 12rem;
+    position: fixed;
+    z-index: 9999;
+    opacity: .9;
 
     &__item {
         transition: color .2s;
