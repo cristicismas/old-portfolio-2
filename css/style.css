@@ -162,7 +162,9 @@ body {
     .card:hover .card__overlay {
       background-color: transparent; }
     .card__info {
-      margin: 2rem 0 0; } }
+      margin: 2rem 0 0; }
+    .card:hover .card__text {
+      animation: none; } }
 
 @media only screen and (max-width: 550px) {
   .card__image {
