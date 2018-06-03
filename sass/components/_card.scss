@@ -32,6 +32,10 @@
         margin: 10% .5rem 0;
     }
 
+    &:hover &__text {
+        animation: slideUp .3s ease-out forwards;
+    }
+
     &__link {
         display: block;
     }

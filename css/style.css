@@ -12,6 +12,14 @@
   100% {
     opacity: 1; } }
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -132,6 +140,8 @@ body {
     opacity: 1; }
   .card__info {
     margin: 10% .5rem 0; }
+  .card:hover .card__text {
+    animation: slideUp .3s ease-out forwards; }
   .card__link {
     display: block; }
 
