@@ -279,26 +279,25 @@ body {
   .skills__content, .skills__heading, .skills__paragraph {
     width: 97%; } }
 
-.projects__text {
-  width: 80%;
-  margin: auto; }
-
-.projects__heading, .projects__paragraph {
-  width: 70%;
-  margin: auto;
-  font-size: 1.3rem; }
-
-.projects__heading {
-  position: relative;
-  top: 5rem;
-  margin-bottom: 5rem; }
-
-.projects__cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-  margin: 10rem auto 0; }
+.projects {
+  padding-top: 10rem; }
+  .projects__text {
+    width: 80%;
+    margin: auto; }
+  .projects__heading, .projects__paragraph {
+    width: 70%;
+    margin: auto;
+    font-size: 1.3rem; }
+  .projects__heading {
+    position: relative;
+    top: 5rem;
+    margin-bottom: 5rem; }
+  .projects__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 10rem auto 0; }
 
 @media only screen and (max-height: 1200px) {
   .projects {
