@@ -15,6 +15,14 @@
     }
 }
 
+.skill {
+    border-bottom: 1px solid rgba($color-white, .7);
+
+    &:hover {
+        border-bottom: 2px solid rgba(#fff, 1);
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .skills {
         &__content,
