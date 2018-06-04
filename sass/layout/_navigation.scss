@@ -10,15 +10,14 @@
     opacity: .9;
 
     &__item {
-        transition: color .2s;
+        transition: all .2s;
         cursor: pointer;
-        opacity: 0;
-        animation: scaleOut .5s ease-out forwards;
+        opacity: 1;
         text-decoration: none;
 
         &:hover {
             color: $color-main;
-            opacity: .5;
+            transform: scale(.9) rotate(1deg);
         }
     }
 }
@@ -34,7 +33,7 @@
 
             &:hover {
                 color: $color-white;
-                opacity: 1;
+                transform: scale(1) rotate(0);
             }
         }
     }
