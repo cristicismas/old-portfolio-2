@@ -7,6 +7,7 @@
     animation: fadeIn .3s ease-out .2s forwards;
 
     &__image {
+        border: 3px solid $color-white;
         border-radius: 3px;
         height: 240px;
         width: 240px;
