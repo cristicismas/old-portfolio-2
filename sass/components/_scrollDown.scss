@@ -1,0 +1,33 @@
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7rem;
+    transition: all .5s;
+
+    &:focus {
+        transform: translate(-50%, 100%) rotate(-180deg);
+        opacity: 0;
+    }
+
+    & path {
+        fill: $color-white;
+        opacity: .8;
+    }
+}
+
+@media only screen and (max-width: 770px),
+       only screen and (max-height: 650px) {
+
+    .scroll-down {
+        pointer-events: none;
+        z-index: -50;
+        bottom: inherit;
+        top: 50%;
+        transform: scale(4) translateX(-12%);
+
+        & path {
+            fill: rgba($color-white, .3);
+        }
+    }
+}
