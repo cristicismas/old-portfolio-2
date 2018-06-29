@@ -20,14 +20,6 @@
        only screen and (max-height: 650px) {
 
     .scroll-down {
-        pointer-events: none;
-        z-index: -50;
-        bottom: inherit;
-        top: 50%;
-        transform: scale(4) translateX(-12%);
-
-        & path {
-            fill: rgba($color-white, .3);
-        }
+        display: none;
     }
 }
