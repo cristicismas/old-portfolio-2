@@ -6,7 +6,7 @@
     transition: all .5s;
 
     &:focus {
-        transform: translate(-50%, 100%) rotate(-180deg);
+        transform: translate(-50%, 100%);
         opacity: 0;
     }
 
