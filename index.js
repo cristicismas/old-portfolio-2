@@ -11,18 +11,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     const checkbox = document.getElementById('nav-toggle');
+    const navBackground = document.getElementsByClassName('navigation__background')[0];
+    const navigation = document.getElementsByClassName('navigation__nav')[0];
 
     checkbox.addEventListener('change', function() {
         if (this.checked) {
-            document.getElementsByClassName('navigation__background')[0].style.transform = 'scale(100)';
+            navBackground.style.transform = 'scale(100)';
 
-            document.getElementsByClassName('navigation__nav')[0].style.opacity = '1';
-            document.getElementsByClassName('navigation__nav')[0].style.width = '100%';
+            navigation.style.opacity = '1';
+            navigation.style.width = '100%';
         } else {
-            document.getElementsByClassName('navigation__background')[0].style.transform = 'scale(0)';
+            navBackground.style.transform = 'scale(0)';
 
-            document.getElementsByClassName('navigation__nav')[0].style.opacity = '0';
-            document.getElementsByClassName('navigation__nav')[0].style.width = '0';
+            navigation.style.opacity = '0';
+            navigation.style.width = '0';
         }
     });
 
@@ -33,10 +35,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         navLinks[i].addEventListener('click', function(e) {
             checkbox.checked = false;
 
-            document.getElementsByClassName('navigation__background')[0].style.transform = 'scale(0)';
+            navBackground.style.transform = 'scale(0)';
 
-            document.getElementsByClassName('navigation__nav')[0].style.opacity = '0';
-            document.getElementsByClassName('navigation__nav')[0].style.width = '0';
+            navigation.style.opacity = '0';
+            navigation.style.width = '0';
         });
     }
 });
