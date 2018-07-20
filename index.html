@@ -13,13 +13,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section id="hero" class="hero">
-        <nav class="navigation">
-            <a href="#skills" class="navigation__item">Skills</a>
-            <a href="#projects" class="navigation__item">Projects</a>
-            <a href="#contact" class="navigation__item">Contact</a>
-        </nav>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
 
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+                <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="hero" class="hero">
         <div class="intro">
             <img src="img/profile-image.jpg" alt="The author" class="intro__image">
             <div class="intro__text">
