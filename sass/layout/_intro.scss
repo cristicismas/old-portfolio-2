@@ -19,6 +19,28 @@
         margin: 1rem 6rem 3rem 6rem;
         letter-spacing: 1px;
     }
+
+    &__email-button {
+        text-decoration: none;
+        text-align: center;
+        width: 25rem;
+        border: 2px solid $color-white;
+        margin: 4rem 3rem;
+        padding: 2rem 0;
+        clip-path: polygon(0 0, 80% 0%, 100% 100%, 20% 100%);;
+        background-color: $color-darker;
+        transition: all .3s;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 14rem;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-darker;
+            border: 2px solid transparent;
+        }
+    }
 }
 
 @media only screen and (max-height: 680px) and (max-width: 1400) {
@@ -36,7 +58,7 @@
     }
 }
 
-@media only screen and (max-width: 1400px) and (orientation: portrait) {
+@media only screen and (max-width: 1540px) and (orientation: portrait) {
     .intro {
         flex-direction: column;
         top: 50%;
@@ -75,6 +97,15 @@
         &__image {
             height: 150px;
             width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-height: 760px) {
+    .intro {
+        &__email-button {
+            bottom: 10rem;
+            margin: 2rem;
         }
     }
 }
