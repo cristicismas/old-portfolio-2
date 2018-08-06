@@ -1,54 +1,35 @@
 .card {
     margin: 3rem;
-    position: relative;
     border-radius: 5px;
-    border: 1px solid rgba($color-white, .3);
-    box-shadow: 8px 8px 15px $color-darker;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-    &__image {
-        height: 20rem;
-        border-radius: 5px;
-        margin: auto;
-        display: block;
+    &:hover &__text {
+        background-color: $color-darker;
     }
 
-    &__overlay {
-        height: 100%;
-        width: 100%;
+    &__image {
+        height: 25rem;
         border-radius: 5px;
-        opacity: 0;
-        z-index: 100;
-        position: absolute;
-        top: 0;
-        left: 0;
+        box-shadow: 8px 8px 15px $color-darker;
+    }
+
+    &__text {
+        width: 600px;
+        margin-left: 15rem;
+        border-radius: 5px;
+        padding: 5rem;
         transition: all .3s;
     }
 
-    &:hover &__overlay {
-        background-color: rgba($color-main-dark, .9);
-        opacity: 1;
-    }
-
     &__info {
-        margin: 10% .5rem 0;
-    }
-
-    &:hover &__text {
-        animation: slideUp .3s ease-out forwards;
-    }
-
-    &__link {
-        display: block;
+        font-size: 1.6rem;
+        margin: 2rem 0;
     }
 }
 
-@media only screen and (max-height: 970px) {
-    .card {
-        color: red;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1275px) {
     .card {
         flex-direction: column;
         margin: 5rem auto;
@@ -57,25 +38,15 @@
 
         &__image {
             border: 1px solid rgba($color-white, .3);
-        }
-
-        &__overlay {
-            opacity: 1;
-            position: initial;
-            width: 70%;
+            width: 60%;
+            height: auto;
             margin: auto;
         }
 
-        &:hover &__overlay {
-            background-color: transparent;
-        }
-
-        &__info {
-            margin: 2rem 0 0;
-        }
-
-        &:hover &__text {
-            animation: none;
+        &__text {
+            margin: 1rem auto;
+            text-align: center;
+            width: 80%;
         }
     }
 }
@@ -83,7 +54,7 @@
 @media only screen and (max-width: 550px) {
     .card {
         &__image {
-            height: 15rem;
+            width: 100%;
         }
     }
 }

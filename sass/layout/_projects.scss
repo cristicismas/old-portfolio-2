@@ -1,5 +1,8 @@
 .projects {
     padding-top: 10rem;
+    margin: 10rem;
+    height: auto;
+
     &__text {
         width: 80%;
         margin: auto;
@@ -9,7 +12,7 @@
     &__paragraph {
         width: 70%;
         margin: auto;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 
     &__heading {
@@ -27,9 +30,10 @@
     }
 }
 
-@media only screen and (max-height: 1200px) {
+@media only screen and (max-height: 1250px) {
     .projects {
         height: auto;
+        margin: 0;
 
         &__cards {
             margin: 10rem auto !important;
