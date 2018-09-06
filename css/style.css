@@ -361,9 +361,10 @@ body {
 
 .skill {
   border-bottom: 1px solid rgba(245, 245, 245, 0.7);
-  transition: border .3s; }
+  transition: border .3s, padding .2s; }
   .skill:hover {
-    border-bottom: 2px solid white; }
+    border-bottom: 2px solid white;
+    padding-bottom: 3px; }
 
 @media only screen and (max-width: 750px) {
   .skills__content, .skills__heading, .skills__paragraph {
