@@ -1,6 +1,7 @@
 .skills {
     &__content {
         width: 75%;
+        line-height: 32px;
         @include centerElement;
     }
 
