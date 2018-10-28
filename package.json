@@ -32,6 +32,6 @@
     "postcss-cli": "^6.0.1"
   },
   "dependencies": {
-    "npm": "^6.2.0"
+    "npm": "^6.4.1"
   }
 }
