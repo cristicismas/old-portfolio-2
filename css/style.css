@@ -361,11 +361,21 @@ body {
   margin-bottom: 5rem; }
 
 .skill {
-  border-bottom: 1px solid rgba(245, 245, 245, 0.7);
-  transition: border .3s, padding .2s; }
+  display: inline-block;
+  transition: all .2s;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: default; }
   .skill:hover {
-    border-bottom: 2px solid white;
-    padding-bottom: 3px; }
+    color: #0099ff; }
+  .skill:after {
+    display: block;
+    content: '';
+    border-bottom: 3px solid #0099ff;
+    transform: scaleX(0);
+    transition: transform .2s ease-out; }
+  .skill:hover:after {
+    opacity: 1;
+    transform: scaleX(1); }
 
 @media only screen and (max-width: 750px) {
   .skills__content, .skills__heading, .skills__paragraph {
