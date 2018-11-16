@@ -21,6 +21,7 @@
     transition: all .2s;
     border-bottom: 1px solid $color-white;
     cursor: default;
+    user-select: none;
 
     &:hover {
         color: $color-main;
@@ -46,6 +47,18 @@
         &__heading,
         &__paragraph {
             width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px), (max-height: 800px) {
+    .skill {
+        &:after {
+            display: none;
+        }
+
+        &:hover {
+            border-bottom-color: $color-main;
         }
     }
 }
