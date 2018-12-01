@@ -39,6 +39,24 @@
             background-color: $color-white;
             color: $color-darker;
             border: 2px solid transparent;
+
+            .intro__email-icon {
+                transform: translateX(.7rem);
+
+                & path {
+                    fill: $color-darker;
+                }
+            } 
+        }
+    }
+
+    &__email-icon {
+        margin: -3px 10px;
+        transition: all .3s;
+
+        & path {
+            fill: $color-white;
+            transition: all .3s;
         }
     }
 }

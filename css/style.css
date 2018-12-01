@@ -303,6 +303,16 @@ body {
       background-color: #f5f5f5;
       color: #222;
       border: 2px solid transparent; }
+      .intro__email-button:hover .intro__email-icon, .intro__email-button:visited:hover .intro__email-icon {
+        transform: translateX(0.7rem); }
+        .intro__email-button:hover .intro__email-icon path, .intro__email-button:visited:hover .intro__email-icon path {
+          fill: #222; }
+  .intro__email-icon {
+    margin: -3px 10px;
+    transition: all .3s; }
+    .intro__email-icon path {
+      fill: #f5f5f5;
+      transition: all .3s; }
 
 @media only screen and (max-height: 680px) and (max-width: 1400) {
   .intro {
