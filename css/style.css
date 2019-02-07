@@ -403,8 +403,6 @@ body {
     width: 97%; } }
 
 .projects {
-  padding-top: 10rem;
-  margin: 10rem;
   height: auto; }
   .projects__text {
     width: 80%;
