@@ -136,6 +136,8 @@ body {
   .card__info {
     font-size: 1.6rem;
     margin: 2rem 0; }
+  .card__link {
+    margin-right: 20px; }
 
 @media only screen and (max-width: 1275px) {
   .card {
