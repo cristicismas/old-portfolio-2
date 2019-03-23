@@ -136,8 +136,11 @@ body {
   .card__info {
     font-size: 1.6rem;
     margin: 2rem 0; }
+  .card__links {
+    display: flex;
+    justify-content: center; }
   .card__link {
-    margin-right: 20px; }
+    margin: 10px; }
 
 @media only screen and (max-width: 1275px) {
   .card {
@@ -157,7 +160,11 @@ body {
 
 @media only screen and (max-width: 550px) {
   .card__image {
-    width: 100%; } }
+    width: 100%; }
+  .card__links {
+    flex-direction: column; }
+  .card__link {
+    margin: 5px; } }
 
 .navigation__checkbox {
   display: none; }
