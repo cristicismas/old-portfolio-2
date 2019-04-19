@@ -53,6 +53,8 @@
 
         &__image {
             border: 1px solid rgba($color-white, .3);
+            transform: translateY(-10px);
+            box-shadow: 15px 15px 15px $color-darker;
             width: 60%;
             height: auto;
             margin: auto;
@@ -61,6 +63,7 @@
         &__text {
             margin: 1rem auto;
             text-align: center;
+            background-color: $color-darker;
             width: 80%;
         }
     }

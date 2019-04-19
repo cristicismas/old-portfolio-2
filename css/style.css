@@ -150,12 +150,15 @@ body {
     box-shadow: none; }
     .card__image {
       border: 1px solid rgba(245, 245, 245, 0.3);
+      transform: translateY(-10px);
+      box-shadow: 15px 15px 15px #222;
       width: 60%;
       height: auto;
       margin: auto; }
     .card__text {
       margin: 1rem auto;
       text-align: center;
+      background-color: #222;
       width: 80%; } }
 
 @media only screen and (max-width: 550px) {
